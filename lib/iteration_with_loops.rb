@@ -14,13 +14,13 @@ def join_nested_strings(src)
     while element_index < src[row_index].count do
       
       if src[row_index][element_index].class == String
+        puts src[row_index][element_index]
         string_array << src[row_index][element_index]
       end
       element_index += 1
     end
-    binding.pry
      row_index += 1
   end
   
-  new_string
+  puts new_string
 end
